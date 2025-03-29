@@ -1,16 +1,13 @@
+use std::collections::HashMap;
+
+// -------------------HASHMAPS-------------------
 fn main() {
-    let _vector: Vec<i32> = Vec::new();
-    let mut _the_vec: Vec<i32> = vec![1, 2, 3];
+    let mut scores = HashMap::new();
 
-    _the_vec.push(4);
-    _the_vec.push(5);
+    scores.insert(String::from("Blue"), 10);
+    scores.insert(String::from("Red"), 50);
 
-    let the_new_vec = _the_vec.clone();
-    // copy(_the_vec, the_new_vec);
-
-    for item in _the_vec {
-        println!("{}", item)
+    for (key, value) in &scores {
+        println!("{key} {value}")
     }
-
-    println!("{:?}", the_new_vec);
 }

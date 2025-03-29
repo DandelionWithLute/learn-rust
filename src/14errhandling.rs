@@ -1,5 +1,7 @@
 use core::f64;
 
+// Match function or Match result of function !
+
 fn errhandling() {
     // Approach
     // enum Option<T> {
