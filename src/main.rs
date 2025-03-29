@@ -1,13 +1,15 @@
-use std::collections::HashMap;
-
-// -------------------HASHMAPS-------------------
 fn main() {
-    let mut scores = HashMap::new();
+    // let _v4 = uuid::Uuid::new_v4().to_string();
+    // let _v4 = uuid::Uuid::new_v4().to_string();
+    // println!("{}", "123".to_string());
+    // println!("{}", _v4);
+    // println!("{}", "123".to_string());
+    // println!("{}", "123".to_string());
 
-    scores.insert(String::from("Blue"), 10);
-    scores.insert(String::from("Red"), 50);
+    let _get_uuid = get_uuid();
+    println!("{}",_get_uuid)
+}
 
-    for (key, value) in &scores {
-        println!("{key} {value}")
-    }
+fn get_uuid() -> String {
+    uuid::Uuid::new_v4().to_string()
 }

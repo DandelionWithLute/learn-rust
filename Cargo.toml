@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+anyhow = "1.0.97"
+clap = "4.5.34"
+uuid = { version = "1.16.0", features = ["md5", "v4", "v8"] }
+walkdir = "2.5.0"
+zip = "2.5.0"
