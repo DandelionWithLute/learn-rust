@@ -58,6 +58,6 @@ fn real_main() -> i32 {
     0
 }
 
-fn main() {
+pub fn append() {
     std::process::exit(real_main());
 }
