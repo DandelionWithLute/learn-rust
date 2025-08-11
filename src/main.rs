@@ -11,11 +11,9 @@ fn real_main() -> i32 {
     for path in paths {
         println!("Name: {}", path.unwrap().path().display())
     }
-
-    // let mut _array: [i32; 5] = [1, 2, 3, 4, 5];
-    // _array.
-    // let mut _array = vec![1, 2, "123", 4, 5];
+ 
     let mut _array = vec!["123","hello"];
+    _array.concat([b"world"]);
     println!("{:?}", _array);
     0
 }
